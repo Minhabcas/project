@@ -128,9 +128,9 @@ def customer_screen():
     tk.Label(root, text="Chức năng Khách hàng", font=("Arial", 14, "bold")).pack(pady=10)
     functions_khach_hang = [
         "Quản lý thông tin cá nhân", 
-        "Xem sản phẩm",
-        
-        "Đơn hàng"
+        "Tìm kiếm sản phẩm",
+        "Đơn hàng",
+        "Trạng thái đơn hàng"
     
 
     ]
@@ -252,10 +252,12 @@ def admin_screen():
         widget.destroy()
     
     tk.Label(root, text="Chức năng Admin", font=("Arial", 14, "bold")).pack(pady=10)
-    functions_nhan_vien = [
-        "Quản lý Kho hàng",  
+    functions_nhan_vien = [ 
         "Quản lý sản phẩm",
+        "Quản lý Kho",
+        "Quản lý đơn hàng",
         "Quản lý khách hàng",
+        "Quản lý Hóa đơn-Thanh toán",
         "Thêm tài khoản" 
     ]
     for func in functions_nhan_vien:
